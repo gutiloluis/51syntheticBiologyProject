@@ -9,7 +9,9 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{doi}
-%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper, margin=1.in]{geometry}
+\usepackage[version=3]{mhchem}
 
 \begin{document}
 
@@ -89,7 +91,7 @@ Juan Manuel \textsc{Pedraza Leal}\\[3cm]
 \pagebreak
 
 \begin{abstract}
-Your abstract\cite{kressler01} \cite{cleland67} \cite{turlings95} \cite{sallaud09} \cite {kirby09} \cite{harada09a} \cite{harada09b} \cite{crocker80} \cite{engerberg-kulka04}.
+Your abstract\cite{kressler01} \cite{cleland67} \cite{turlings95} \cite{sallaud09} \cite {kirby09} \cite{harada09a} \cite{harada09b} \cite{crocker80} \cite{engerberg-kulka04} \cite {alon06}.
 \end{abstract}
 
 \section{Introducci\'on}
@@ -98,14 +100,59 @@ Your introduction goes here! Some examples of commonly used commands and feature
 
 If you have a question, please use the support box in the bottom right of the screen to get in touch. 
 
-\section{Some \LaTeX{} Examples}
-\label{sec:examples}
+\section{Modelo}
+\label{sec:model}
 
-\subsection{Sections}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{circuit.png}
+\caption{\label{fig:Circuit}This is a figure caption.}
+\end{figure}
 
-Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+\subsection{Ecuaciones de Hill}
+
+Para la parte de ... consideramos que el ADN total $\text{D}_{\text{T}}$ es constante, es decir
+
+\begin{align}
+\ce{[Z] + [A] <=>[\ce{\hat{k}_+}][\ce{\hat{k}_-}] [ZA] ->[\ce{\hat{k}_{cat}}] [Z]+[F]}\\
+\ce{[E] + [F] <=>[\ce{k_+}][\ce{k_-}] [ZA] ->[\ce{k_{cat}}] [Z]+[F]}
+\end{align}
+
+Seg\'un las ecuaciones qu\'imicas, las ecuaciones diferenciales para [B], [F], [ZA] y [EF] so
+
+\begin{align}
+  \dot{[B]} &= k_{\text{cat}}[E][F]-\gamma_BB \label{eq:Bdot}\\
+  \dot{[ZA]} &= \hat{k}_+[Z][A] - \hat{k}_-[ZA]-\hat{k}_{\text{cat}}[ZA] \label{eq:ZAdot}\\
+  \dot{[EF]} &= k_+[E][F]-k_-[EF]-k_{\text{cat}}[EF] \label{eq:EFdot}\\
+  \dot{[F]} &= -k_+[E][F]+k_-[EF]+\hat{k}_{\text{cat}}[ZA] \label{eq:Fdot}
+\end{align}
+
+Asumiendo que los complejos enzima-sustrato est\'an en equilibrio, es decir, $\dot{[ZA]} = 0$ y $\dot{[EF]} = 0$ obtenemos de las ecuaciones \cite{eq:ZAdot} y \cite{eq:EFdot}
 
 
+
+Donde a la ecuaci\'on para B se le puso un t\'ermino de degradamiento, pues en las dem\'as como las tasas de reacciones enzim\'aticas son mucho mayores a las de degradamiento blabla
+
+$$[\text{D}_{\text{T}}]=[\text{D}]+[\text{DS}]+[\text{DI}]+[\text{DIS}]$$,
+
+donde $[\text{D}]$ representa el ADN libre, $[\text{DIS}]$ el ADN unido al represor I y al activador S, $[\text{DS}]$ el unido al activador y $[\text{DI}]$ el unido al represor.
+
+En equilibrio y utilizando balance detallado obtenemos las siguientes ecuaciones diferenciales para la concentraci\'on de la enzima $Z$ y su ARN $r_Z$, y de igual manera para la enzima $E$ :
+
+\begin{multline}
+\dot{r_Z}(t) = 
+\alpha_{IS}
++ \frac{\beta_{IS_I}}{\left( \frac{K_I}{I} \right)^{n_I} + 1 + \left( \frac{S}{K_S} \right)^{n_S} \left( \frac{K_I}{I} \right)^{n_I} + \left( \frac{S}{K_S} \right)^{n_S}}
++ \frac{\beta_{IS_S}}{\left( \frac{K_S}{S} \right)^{n_S} + \left( \frac{I}{K_I} \right)^{n_I} \left( \frac{K_S}{S} \right)^{n_S} + 1 + \left( \frac{I}{K_I} \right)^{n_I}}\\
++ \frac{\beta_{IS_{IS}}}{\left( \frac{K_I}{I} \right)^{n_I} \left( \frac{K_S}{S} \right)^{n_S} + \left( \frac{K_S}{S} \right)^{n_S} + \left( \frac{K_I}{I} \right)^{n_I} + 1}
+- \gamma_{r_Z} r_Z
+\end{multline}
+
+\begin{align}
+\dot{Z}(t) &= k_Z r_Z - \gamma_Z Z\\
+\dot{r_E}(t) &= \alpha_S + \frac{\beta_S}{1+ \left( \frac{K_S}{S}\right)^{n_S}} - \gamma_{r_E} r_E\\
+\dot{E}(t) &= k_E r_E - \gamma_EE
+\end{align}
 
 \subsection{Comments}
 
@@ -115,14 +162,9 @@ Comments can be added to the margins of the document using the \todo{Here's a co
 
 \subsection{Tables and Figures}
 
-Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:Circuit} below.
 
 % Commands to include a figure:
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{frog.jpg}
-\caption{\label{fig:frog}This is a figure caption.}
-\end{figure}
 
 \begin{table}
 \centering

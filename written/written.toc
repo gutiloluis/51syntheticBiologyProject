@@ -1,8 +1,8 @@
 \select@language {spanish}
 \contentsline {section}{\numberline {1}Introducci\'on}{2}{section.1}
-\contentsline {section}{\numberline {2}Some \textlatin {\LaTeX }{} Examples}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Sections}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Comments}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Tables and Figures}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Mathematics}{2}{subsection.2.4}
+\contentsline {section}{\numberline {2}Modelo}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Ecuaciones de Hill}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Comments}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Tables and Figures}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Mathematics}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Lists}{4}{subsection.2.5}
