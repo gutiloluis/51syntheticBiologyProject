@@ -1,15 +1,15 @@
 Descripcion,Nombre,Valor,Unidades,Referencia
-K de union de LacI a LacO,KLacI,"8,00E-04",mM,"Basu et al., 2005"
+K de union de LacI a LacO,KLacI,8.00E-04,mM,"Basu et al., 2005"
 Coeficiente de Hill LacI-LacO,nLacI,1,-,"Kalisky et al., 2007"
 Tasa transcripcion con LacI,αLac,1/620,*β,"Lutz & Bujard, 1997"
-Tasa transcripcion sin LacI,βLac,"1,42",RPU,"Kelly et al., 2009"
+Tasa transcripcion sin LacI,βLac,1.42,RPU,"Kelly et al., 2009"
 ,,,,
 Tasa de síntesis de HSL,kHSL,,,
 K de union de HSL-LuxR,KHSL,553,nM,"Pasotti et al, 2011"
 Coeficiente de Hill HSL-LuxR,nHSL,,,
 K de union de LuxR-pLux,KLuxR,,,
 Coeficiente de Hill LuxR-pLux,nLuxR,,,
-Tasa transcripcion con LuxR,αLux,"0,01",*β,"Pasotti et al, 2011"
+Tasa transcripcion con LuxR,αLux,0.01,*β,"Pasotti et al, 2011"
 Tasa transcripcion sin LuxR,βLux,,,
 Tasa de traduccion de LacI,kLacI,,,
 Degradacion mlacI,,,,
@@ -26,5 +26,7 @@ Tasa de transcripcion con ABA,,,,
 Tasa fosforilaciones,,,,
 ,,,,
 V reaccion enzimatica? -> Acumulacion de FPP,,,,
+K_M para reaccion FPP -> Berg, K_MBerg, 0.0047, mM, "Landmann et al, 2007"
+"K_cat/K_M para reaccion FPP -> Berg, Vmax = K_cat[E_T]", 0.7, 1/mMs^1, "Landmann et al, 2007"
 ,,,,
 Nivel toxico de FPP,,,,
