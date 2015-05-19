@@ -1,0 +1,30 @@
+Descripcion,Nombre,Valor,Unidades,Referencia
+K de union de LacI a LacO,KLacI,"8,00E-04",mM,"Basu et al., 2005"
+Coeficiente de Hill LacI-LacO,nLacI,1,-,"Kalisky et al., 2007"
+Tasa transcripcion con LacI,αLac,1/620,*β,"Lutz & Bujard, 1997"
+Tasa transcripcion sin LacI,βLac,"1,42",RPU,"Kelly et al., 2009"
+,,,,
+Tasa de síntesis de HSL,kHSL,,,
+K de union de HSL-LuxR,KHSL,553,nM,"Pasotti et al, 2011"
+Coeficiente de Hill HSL-LuxR,nHSL,,,
+K de union de LuxR-pLux,KLuxR,,,
+Coeficiente de Hill LuxR-pLux,nLuxR,,,
+Tasa transcripcion con LuxR,αLux,"0,01",*β,"Pasotti et al, 2011"
+Tasa transcripcion sin LuxR,βLux,,,
+Tasa de traduccion de LacI,kLacI,,,
+Degradacion mlacI,,,,
+Degradacion LacI,,,,
+,,,,
+Tasa de transcripcion sin ABA,,,,
+Tasa de transcripcion con ABA,,,,
+"Tasa de traduccion LuxR, LuxI y enzimas",,,,
+"Degradacion m(LuxR, LuxI y enzimas)",,,,
+"Degradacion LuxR, LuxI y enzimas",,,,
+,,,,
+,,,,
+,,,,
+Tasa fosforilaciones,,,,
+,,,,
+V reaccion enzimatica? -> Acumulacion de FPP,,,,
+,,,,
+Nivel toxico de FPP,,,,
