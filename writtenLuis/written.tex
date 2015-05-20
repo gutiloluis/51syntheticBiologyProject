@@ -192,11 +192,11 @@ Donde $K_M$ y $\hat{K}_M$ son las constantes de Michaelis de las reacciones. Ree
 Las cuales son las ecuaciones diferenciales para F y B que dependen de las cantidades conocidas, ambas ecuaciones junto con \ref{eq:rZ} - \ref{eq:E} y las condiciones iniciales para cada una de las funciones ser\'an las inclu\'idas en los modelos deterministas y estoc\'astico.
 
 \subsection{Modelo determinista}
-
+\todo[inline]{decir que inicialmente se quer\'ian oscilaciones}
 
 
 \subsection{Modelo estoc\'astico}
-Para realizar la simulaci\'on estoc\'astica se utiliz\'o el algoritmo de Gillespie
+Para realizar la simulaci\'on estoc\'astica se utiliz\'o el algoritmo de Gillespie. Si los eventos de producci\'on de ARN y prote\'inas son considerados separadamente se tendr\'ian 8 eventos, lo cual tomar\'ia mucho tiempo en ejecutar. Por lo tanto, se realiz\'o el algoritmo con r\'afagas de prote\'inas, de tal forma que al evento de producirse un RNA, se producen $\frac{k_P}{\gamma_r}$ prote\'inas. Esto es lo que corresponde al promedio de prote\'inas que se pueden traducir de un RNA durante su tiempo de vida.
 
 \bibliographystyle{plain}
 \bibliography{written.bib}
