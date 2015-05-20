@@ -15,6 +15,7 @@ Tasa de traduccion de LacI,kLacI,,,
 Degradacion mlacI,,,,
 Degradacion LacI,,,,
 ,,,,
+K afinidad ABRE, K_S, 5.99, kcal/mol DeltaDeltaG, "Sarkar et al, 2013"
 Tasa de transcripcion sin ABA,,,,
 Tasa de transcripcion con ABA,,,,
 "Tasa de traduccion LuxR, LuxI y enzimas",,,,
@@ -30,3 +31,4 @@ K_M para reaccion FPP -> Berg, K_MBerg, 0.0047, mM, "Landmann et al, 2007"
 "K_cat/K_M para reaccion FPP -> Berg, Vmax = K_cat[E_T]", ~Vmax,  0.7, 1/mMs^-1, "Landmann et al, 2007"
 ,,,,
 Nivel toxico de FPP,,,,
+
