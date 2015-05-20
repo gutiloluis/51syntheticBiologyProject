@@ -1,0 +1,41 @@
+Dato,descrip,esta?
+,BergSynthase,																																																																																																								
+Alpha_S,Transc. basal RNA BergSynthase, 
+Betha_S, Transc. RNA BergSynthase + ABA, 
+K_S, Afinidad ABA, X*
+Gamma_RE, Degrad. RNA BergSynthase, X
+n_S, Hill para ABA, 
+K_E, tasa de traduccion BergSynthase, 
+Gamma_E, degrad. BergSynthase, X
+,,
+,Plasmido,
+Alpha, Transc. basal RNA Plasmido, 
+Betha_I, Transc. RNA Plasmido + LacI, X
+Betha_A, Transc. RNA Plasmido + ABA,
+Betha_IA, Transc. RNA Plasmido + ABA + LacI,
+K_S, Afinidad ABA, X*
+K_I, Afinidad LacI, X
+Gamma_RP, Degrad. RNA BergSynthase, X
+n_S, Hill para ABA, 
+n_I, Hill para LacI, X
+K_Z, tasa de traduccion Plasmido,
+K_I, tasa de traduccion LacI, 
+Gamma_Z, degrad. plasmido, X
+Gamma_I, degrad. LacI, X
+Delay, retraso por longitud del plasmido, 
+Toxic, Concentracion de FPP toxica,  
+,,
+,Reacciones enzimas,
+K_M BergSynthase, Constante de MM BergSynthase + FPP, X
+Kcat/K_M BergSynthase, velocidad max. de BergSynthase + FPP, X
+K_M Z, Constante de MM Z + ABA, 
+Kcat/K_M Z, velociad max. de Z + ABA,
+,,
+,Misc,
+Primers,,
+Secuencias,,
+Chasis,,X
+Etica,,
+
+
+
