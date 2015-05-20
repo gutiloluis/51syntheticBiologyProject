@@ -22,12 +22,20 @@ K_Z, tasa de traduccion Plasmido,
 K_I, tasa de traduccion LacI, X
 Gamma_Z, degrad. plasmido, X
 Gamma_I, degrad. LacI, X
-Delay, retrazo por longitud del plasmido,  
+Delay, retraso por longitud del plasmido, 
+Toxic, Concentracion de FPP toxica,  
 ,,
 ,Reacciones enzimas,
 K_M BergSynthase, Constante de MM BergSynthase + FPP, X
 Kcat/K_M BergSynthase, velocidad max. de BergSynthase + FPP, X
 K_M Z, Constante de MM Z + ABA, 
 Kcat/K_M Z, velociad max. de Z + ABA,
+,,
+,Misc,
+Primers,,
+Secuencias,,
+Chasis,,X
+Etica,,
+
 
 
