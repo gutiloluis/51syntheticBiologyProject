@@ -27,6 +27,6 @@ Tasa fosforilaciones,,,,
 ,,,,
 V reaccion enzimatica? -> Acumulacion de FPP,,,,
 K_M para reaccion FPP -> Berg, K_MBerg, 0.0047, mM, "Landmann et al, 2007"
-"K_cat/K_M para reaccion FPP -> Berg, Vmax = K_cat[E_T]", ~Vmax,  0.7, 1/mMs^1, "Landmann et al, 2007"
+"K_cat/K_M para reaccion FPP -> Berg, Vmax = K_cat[E_T]", ~Vmax,  0.7, 1/mMs^-1, "Landmann et al, 2007"
 ,,,,
 Nivel toxico de FPP,,,,
