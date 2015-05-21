@@ -27,8 +27,10 @@ Tasa de transcripcion con ABA,,,,
 Tasa fosforilaciones,,,,
 ,,,,
 V reaccion enzimatica? -> Acumulacion de FPP,,,,
-K_M para reaccion FPP -> Berg, K_MBerg, 0.0047, mM, "Landmann et al, 2007"
-"K_cat/K_M para reaccion FPP -> Berg, Vmax = K_cat[E_T]", ~Vmax,  0.7, 1/mMs^-1, "Landmann et al, 2007"
+K_M para reaccion FPP -> Berg, K_MBerg, 0.0014, mM, "Jones et al, 2007"
+Turnover number para reaccion FPP -> Berg, K_CBerg,  0.34, 1/s, "Jones et al, 2007"
+K_M para reaccion ABA -> FPP de S.aureus, K_MFpp, 0.0048, nM, "Kittleman et al, 2007"
+Turnover number para ABA -> FPP de S.aureus, K_CFpp, 0.065, 1/s, "Kittleman et al, 2007"
 ,,,,
 Nivel toxico de FPP,,,,
 
