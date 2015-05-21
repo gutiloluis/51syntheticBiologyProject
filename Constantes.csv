@@ -1,36 +1,22 @@
 Descripcion,Nombre,Valor,Unidades,Referencia
-K de union de LacI a LacO,KLacI,8.00E-04,mM,"Basu et al., 2005"
-Coeficiente de Hill LacI-LacO,nLacI,1,-,"Kalisky et al., 2007"
+K de union de LacI a LacO,KI,8.00E-04,mM,"Basu et al., 2005"
+Coeficiente de Hill LacI-LacO,nI,1,-,"Kalisky et al., 2007"
 Tasa transcripcion con LacI,αLac,1/620,*β,"Lutz & Bujard, 1997"
 Tasa transcripcion sin LacI,βLac,1.42,RPU,"Kelly et al., 2009"
 ,,,,
-Tasa de síntesis de HSL,kHSL,,,
-K de union de HSL-LuxR,KHSL,553,nM,"Pasotti et al, 2011"
-Coeficiente de Hill HSL-LuxR,nHSL,,,
-K de union de LuxR-pLux,KLuxR,,,
-Coeficiente de Hill LuxR-pLux,nLuxR,,,
-Tasa transcripcion con LuxR,αLux,0.01,*β,"Pasotti et al, 2011"
-Tasa transcripcion sin LuxR,βLux,,,
 Tasa de traduccion de LacI,kLacI,,,
 Degradacion mlacI,,,,
 Degradacion LacI,,,,
 ,,,,
-K afinidad ABRE, K_S, 5.99, kcal/mol DeltaDeltaG, "Sarkar et al, 2013"
-Tasa de transcripcion sin ABA,,,,
-Tasa de transcripcion con ABA,,,,
-"Tasa de traduccion LuxR, LuxI y enzimas",,,,
-"Degradacion m(LuxR, LuxI y enzimas)",,,,
-"Degradacion LuxR, LuxI y enzimas",,,,
+K afinidad ABA-ABRE,K_S,Sens,,
+Coeficiente de hill ABA-ABRE,nA,Sens,, 
+Tasa de transcripcion sin ABA,αABA,Sens,,
+Tasa de transcripcion con ABA,βABA,Sens,,
 ,,,,
-,,,,
-,,,,
-Tasa fosforilaciones,,,,
-,,,,
-V reaccion enzimatica? -> Acumulacion de FPP,,,,
 K_M para reaccion FPP -> Berg, K_MBerg, 0.0014, mM, "Jones et al, 2007"
 Turnover number para reaccion FPP -> Berg, K_CBerg,  0.34, 1/s, "Jones et al, 2007"
 K_M para reaccion ABA -> FPP de S.aureus, K_MFpp, 0.0048, nM, "Kittleman et al, 2007"
 Turnover number para ABA -> FPP de S.aureus, K_CFpp, 0.065, 1/s, "Kittleman et al, 2007"
 ,,,,
-Nivel toxico de FPP,,,,
+Nivel toxico de FPP,,10,h,
 
