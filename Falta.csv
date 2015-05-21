@@ -1,8 +1,8 @@
 Dato,descrip,esta?
 ,BergSynthase,																																																																																																								
-α_S,Transc. basal RNA BergSynthase, 
-β_S, Transc. RNA BergSynthase + ABA, 
-K_S, Afinidad ABA, X*
+α_S,Transc. basal RNA BergSynthase, X*
+β_S, Transc. RNA BergSynthase + ABA, X*
+K_S, Afinidad ABA, Sens
 Gamma_RE, Degrad. RNA BergSynthase, X
 n_S, Hill para ABA, Sens
 K_E, tasa de traduccion BergSynthase, Sens
