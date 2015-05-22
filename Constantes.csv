@@ -1,17 +1,20 @@
 Descripcion,Nombre,Valor,Unidades,Referencia
-K de union de LacI a LacO,KI,8.00E-04,mM,"Basu et al., 2005"
-Coeficiente de Hill LacI-LacO,nI,1,-,"Kalisky et al., 2007"
+K de union de LacI a LacO,KR,8.00E-04,mM,"Basu et al., 2005"
+Coeficiente de Hill LacI-LacO,nR,1,-,"Kalisky et al., 2007"
 Tasa transcripcion con LacI,αLac,1/620,*β,"Lutz & Bujard, 1997"
-Tasa transcripcion sin LacI,βLac,1.42,RPU,"Kelly et al., 2009"
+Tasa transcripcion sin LacI,βLac,1.02,RPU,"Kelly et al., 2009"
+Tasa transcripcion con ABA, βABA, 51.2, *β,"Hobo et al., 1999"
 ,,,,
-Tasa de traduccion de LacI,kLacI,,,
+Tasa de traduccion de LacI,kLacI,10,min/RNA,
 Degradacion mlacI,,,,
 Degradacion LacI,,,,
 ,,,,
-K afinidad ABA-ABRE,K_S,Sens,,
-Coeficiente de hill ABA-ABRE,nA,Sens,, 
-Tasa de transcripcion sin ABA,αABA,Sens,,
-Tasa de transcripcion con ABA,βABA,Sens,,
+K afinidad ABA-ABRE,KS,Sens,,
+Coeficiente de hill ABA-ABRE,nS,Sens,, 
+Tasa de transcripcion sin ABA,αRS,Sens,,
+Tasa de transcripcion con ABA,βRSS,Sens,,
+Tasa de transcripcion con LacI,βRSR, αRS* 1/620,,
+Tasa de transcripcion con ABA+LacI,βRSRS,βRSR,,
 ,,,,
 K_M para reaccion FPP -> Berg, K_MBerg, 0.0014, mM, "Jones et al, 2007"
 Turnover number para reaccion FPP -> Berg, K_CBerg,  0.34, 1/s, "Jones et al, 2007"
