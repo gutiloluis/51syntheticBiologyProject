@@ -5,6 +5,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{doi}
 \usepackage{mathtools}
@@ -206,24 +208,29 @@ En la tabla \ref{tab:1} est\'an listados los par\'ametros del modelo.
 
 \begin{table}[H]
 \centering
-\begin{tabular}{c c c c} 
+\begin{tabular}{c c c c c} 
  \hline
- S\'imbolo & Descripci\'on & Valor & Ref. \\
+ S\'imbolo & Valor & Unidades & Descripci\'on & Ref. \\
  \hline\hline
- $\alpha_S$ & 2.0 & Actividad basal de S & ? \\ 
- $\beta_S$ & $50\alpha_S$ & Fuerza de S en presencia de activador & ? \\
- $K_S$ & $2000$ & Constante de disociaci\'on del activador a S & ? \\
- $n_S$ & $N$ & Coeficiente de Hill de S & ?\\
- $k_E$ & $20.0$ & Tasa de traducci\'on de E & ?\\
- $\alpha_{RS}$ & $2.13$ & Actividad basal de RS & ?\\
- $\beta_{RS_R}$ & $\frac{\alpha_{RS}}{620}$ & Fuerza de RS cuando el represor est\'a unido & ?\\
- $K_R$ & $2000$ & Constante de disociaci\'on del represor a R & ?\\
- $n_R$ & $N$ & Coeficiente de Hill de R & ?\\
- $\beta_{RS_S}$ & $10\alpha_{RS}$ & Fuerza de RS cuando el activador est\'a unido & ?\\
- $\beta_{RS_RS}$ & $\frac{\beta_{RS_S}}{2}$ & Fuerza de RS cuando tanto el represor como el activador est\'an unidos & ?\\
- $k_R$ & $10$ & Tasa de traducci\'on de R & ?\\
- $\gamma_P$ & $\frac{1}{30}$ & Tasa de degradaci\'on de las prote\'inas (E y R) & ?\\
- $\gamma_r$ & $N$ & Tasa de degradaci\'on del ARN (de E y R) & ?\\
+ W & 1791/RFP & - & Mutaci\'on en el promotor constitutivo & BBa\_J23113 \\
+ $\alpha_S$ & $1.53/W$ & - & Actividad basal de S & Kelly  2009  \\ 
+ $\beta_S$ & $51.2 \alpha_S$ & - &  Actividad de S con ABA & Hobo 1999 \\
+ $\alpha_{RS}$ & $1.53/W$ & - & Actividad basal de RS & Kelly  2009\\
+ $\beta_{RS_R}$ & $\alpha_{RS}/620$ & - & Actividad de RS con LacI & Lutz 1997\\
+ $\beta_{RS_S}$ & $51.2 \alpha_{RS}$ & - & Actividad de  RS con ABA & Hobo 1999\\
+ $\beta_{RS_RS}$ & $\beta_{RS_R}$ & - & Actividad de RS con ABA y LacI & Bujard 1997 \\
+ $K_S$ & * &  & Constante de disociaci\'on del ABA-ABRE &  \\
+ $n_S$ & * &  & Coeficiente de Hill de S & \\
+ $k_E$ & * &  & Tasa de traducci\'on de E &   \\
+ $K_R$ & $8*10^{-4}$ & mM & Constante de disociaci\'on de LacI & Basu 2005\\
+ $n_R$ & 1 & - & Coeficiente de Hill de LacI & Kalisky 2007\\
+ $k_R$ & * & & Tasa de traducci\'on de R & \\
+ $\gamma_R$ & * & & Tasa de degradaci\'on de la enzima Z & \\
+ $\gamma_E$ & 1/30 & $min^{-1}$ & Tasa de degradaci\'on del ARN (de E y R) & \\
+ $K_{MBerg}$ & 0.0014 & $mM$ & Constante de MM para enzima E & Jones 2007 \\
+ $K_{CBerg}$ & 0.34 & $s^{-1}$ & Turnover para enzima E & Jones 2007 \\
+ $K_{MFpp}$ & 0.0048 & $mM$ & Constante de MM para enzima Z & Kittleman 2007 \\
+ $K_{CFpp}$ & 0.34 & $s^{-1}$ & Turnover para enzima Z & Kittleman 2007 \\
  \hline
 \end{tabular}
 \caption{Par\'ametros del modelo. S hace referencia al promotor \emph{ABRA} individual y RS al promotor \emph{ABRA} con el sitio de \emph{lacI}. Las tasas de degradaci\'on $\gamma$ se tomaron iguales en todos los casos.}
@@ -238,53 +245,60 @@ Por otra parte, las escalas de tiempo a las que ocurren las reacciones enzim\'at
 
 En programa fu\'e realizado utilizado IPython notebook, se puede ver el c\'odigo fuente en el ap\'endice \ref{sec:code}.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{alpha-kE.jpeg}
-  \caption{\label{fig:alpha-kE} Barrido para $\alpha$ y $k_E$.}
- \end{figure}
+\subsection{An\'alisis de sensibilidad}
+Se realiz\'o un an\'alisis de sensibilidad usando las constantes que no se conocen. \'Estas se pueden dividir en 2 grupos, $W$ y $\gamma_R$ que son manipulables y $K_S$, $n_S$, $k_E$ y $k_R$ que son las que queremos optimizar. A partir de esto, se seleccionaron 3 niveles distintos para $W$ y $\gamma_R$, y 4 niveles posibles para las dem\'as. Para escoger el r\'ango \'optimo, se estableci\'o que la concentraci\'on de FPP m\'axima no pod\'ia superar los $0.0004 mM$ y que el nivel de bergamoteno prodicido fuera el m\'aximo. Esto se justifica porque no queremos una cantidad de FPP que llegue a ser t\'oxica muy r\'apidamente, y queremos la mayor cantidad posible de bergamoteno.\\
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{alpha-KS.jpeg}
-  \caption{\label{fig:alpha-kS} Barrido para $\alpha$ y $K_S$.}
- \end{figure}
+  \begin{subfigure}[b]{0.5\textwidth}
+  	\centering
+  	\includegraphics[width=\textwidth]{alpha-kE.jpeg}
+  	\caption{\label{fig:alpha-kE} Barrido para $\alpha$ y $k_E$.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\textwidth}
+  	\centering
+  	\includegraphics[width=\textwidth]{alpha-KS.jpeg}
+  	\caption{\label{fig:alpha-kS} Barrido para $\alpha$ y $K_S$.}
+  \end{subfigure}
+    
+  \begin{subfigure}[b]{0.5\textwidth}
+	\centering
+  	\includegraphics[width=\textwidth]{alpha-kz.jpeg}
+  	\caption{\label{fig:alpha-kz} Barrido para $\alpha$ y $k_Z$.}
+  \end{subfigure}  
+  \begin{subfigure}[b]{0.5\textwidth}
+  	\centering
+  	\includegraphics[width=\textwidth]{alpha-nS.jpeg}
+  	\caption{\label{fig:alpha-nS} Barrido para $\alpha$ y $n_S$.}
+  \end{subfigure}  
+\caption{\label{fig:alpha} an\'alisis para $\alpha$} 
+\end{figure}
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{alpha-kz.jpeg}
-  \caption{\label{fig:alpha-kz} Barrido para $\alpha$ y $k_Z$.}
+	\begin{subfigure}[b]{0.5\textwidth}
+  		\centering
+  		\includegraphics[width=\textwidth]{gammaZ-kE.jpeg}
+  		\caption{\label{fig:gammaZ-kE} Barrido para $\gamma_Z$ y $k_E$.}
+  	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+  		\includegraphics[width=\textwidth]{gammaZ-KS.jpeg}
+		\caption{\label{fig:gammaZ-KS} Barrido para $\gamma_Z$ y $K_S$.}
+  	\end{subfigure} 	
+  	
+  	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{gammaZ-kZ.jpeg}
+		\caption{\label{fig:gammaZ-kZ} Barrido para $\gamma_Z$ y $k_Z$.}
+  	\end{subfigure} 	
+  		\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{gammaZ-nS.jpeg}
+		\caption{\label{fig:gammaZ-nS} Barrido para $\gamma_Z$ y $n_S$.}
+  	\end{subfigure} 	
+ \caption{\label{fig:gammaZ} an\'alisis para $\gamma _Z$}	
  \end{figure}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{alpha-nS.jpeg}
-  \caption{\label{fig:alpha-nS} Barrido para $\alpha$ y $n_S$.}
- \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{gammaZ-kE.jpeg}
-  \caption{\label{fig:gammaZ-kE} Barrido para $\gamma_Z$ y $k_E$.}
- \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{gammaZ-KS.jpeg}
-  \caption{\label{fig:gammaZ-KS} Barrido para $\gamma_Z$ y $K_S$.}
- \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{gammaZ-kZ.jpeg}
-  \caption{\label{fig:gammaZ-kZ} Barrido para $\gamma_Z$ y $k_Z$.}
- \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth]{gammaZ-nS.jpeg}
-  \caption{\label{fig:gammaZ-nS} Barrido para $\gamma_Z$ y $n_S$.}
- \end{figure}
+Se puede observar que para valores intermedios de $W$ (\ref{fig:alpha}) y de $\gamma _Z$ (\ref{fig:gammaZ}) se obtienen los valores m\'as estables para las diferentes combinaciones de las dem\'as constantes. Hay que recordar que $W$ est\'a relacionado inversamente con la producci\'on basal de RNA tanto para los circuitos del p\'lasmido como para los de la enzima del bergamoteno.
 
 \appendix
 \section{Ap\'endices}
