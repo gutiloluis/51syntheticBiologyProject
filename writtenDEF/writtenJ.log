@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.21)  22 MAY 2015 06:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.17)  22 MAY 2015 08:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **writtenJ.tex
 (./writtenJ.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -1206,7 +1206,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-<aaaa.png, id=88, 260.975pt x 210.7875pt>
+<aaaa.png, id=78, 260.975pt x 210.7875pt>
 File: aaaa.png Graphic file (type png)
  <use aaaa.png>
 Package pdftex.def Info: aaaa.png used on input line 67.
@@ -1285,7 +1285,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 76.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 76.
-<Circuit.png, id=112, 794.97pt x 614.295pt>
+<Circuit.png, id=101, 794.97pt x 614.295pt>
 File: Circuit.png Graphic file (type png)
  <use Circuit.png>
 Package pdftex.def Info: Circuit.png used on input line 82.
@@ -1449,7 +1449,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 205.
 
-Overfull \hbox (25.9669pt too wide) in paragraph at lines 211--236
+Overfull \hbox (8.49016pt too wide) in paragraph at lines 211--236
  [][] 
  []
 
@@ -1541,13 +1541,13 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 250.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 250.
-[8] <alpha-kE.jpeg, id=197, 466.74374pt x 364.36125pt>
+[8] <alpha-kE.jpeg, id=206, 466.74374pt x 364.36125pt>
 File: alpha-kE.jpeg Graphic file (type jpg)
  <use alpha-kE.jpeg>
 Package pdftex.def Info: alpha-kE.jpeg used on input line 254.
 (pdftex.def)             Requested size: 234.8775pt x 183.35883pt.
 
-<alpha-KS.jpeg, id=198, 466.74374pt x 356.33125pt>
+<alpha-KS.jpeg, id=207, 466.74374pt x 356.33125pt>
 File: alpha-KS.jpeg Graphic file (type jpg)
  <use alpha-KS.jpeg>
 Package pdftex.def Info: alpha-KS.jpeg used on input line 259.
@@ -1557,13 +1557,13 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 252--262
 [][] [] 
  []
 
-<alpha-kz.jpeg, id=199, 466.74374pt x 364.36125pt>
+<alpha-kz.jpeg, id=208, 466.74374pt x 364.36125pt>
 File: alpha-kz.jpeg Graphic file (type jpg)
  <use alpha-kz.jpeg>
 Package pdftex.def Info: alpha-kz.jpeg used on input line 265.
 (pdftex.def)             Requested size: 234.8775pt x 183.35883pt.
 
-<alpha-nS.jpeg, id=200, 376.40625pt x 296.10625pt>
+<alpha-nS.jpeg, id=209, 376.40625pt x 296.10625pt>
 File: alpha-nS.jpeg Graphic file (type jpg)
  <use alpha-nS.jpeg>
 Package pdftex.def Info: alpha-nS.jpeg used on input line 270.
@@ -1573,13 +1573,13 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 263--273
 [][] [] 
  []
 
-<gammaZ-kE.jpeg, id=201, 460.72125pt x 364.36125pt>
+<gammaZ-kE.jpeg, id=210, 460.72125pt x 364.36125pt>
 File: gammaZ-kE.jpeg Graphic file (type jpg)
  <use gammaZ-kE.jpeg>
 Package pdftex.def Info: gammaZ-kE.jpeg used on input line 279.
 (pdftex.def)             Requested size: 234.8775pt x 185.7495pt.
 
-<gammaZ-KS.jpeg, id=202, 472.76625pt x 350.30875pt>
+<gammaZ-KS.jpeg, id=211, 472.76625pt x 350.30875pt>
 File: gammaZ-KS.jpeg Graphic file (type jpg)
  <use gammaZ-KS.jpeg>
 Package pdftex.def Info: gammaZ-KS.jpeg used on input line 284.
@@ -1589,13 +1589,13 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 277--287
 [][] [] 
  []
 
-<gammaZ-kZ.jpeg, id=203, 460.72125pt x 364.36125pt>
+<gammaZ-kZ.jpeg, id=212, 460.72125pt x 364.36125pt>
 File: gammaZ-kZ.jpeg Graphic file (type jpg)
  <use gammaZ-kZ.jpeg>
 Package pdftex.def Info: gammaZ-kZ.jpeg used on input line 290.
 (pdftex.def)             Requested size: 234.8775pt x 185.7495pt.
 
-<gammaZ-nS.jpeg, id=204, 460.72125pt x 359.3425pt>
+<gammaZ-nS.jpeg, id=213, 460.72125pt x 359.3425pt>
 File: gammaZ-nS.jpeg Graphic file (type jpg)
  <use gammaZ-nS.jpeg>
 Package pdftex.def Info: gammaZ-nS.jpeg used on input line 295.
@@ -1630,127 +1630,102 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 300.
 [9 <./alpha-kE.jpeg> <./alpha-KS.jpeg> <./alpha-kz.jpeg> <./alpha-nS.jpeg>]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 304.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 305.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 305.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 305.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 305.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 305.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 305.
-
 (./writtenJ.bbl
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 15.
  [10 <./gammaZ-kE.jpeg> <./gammaZ-KS.jpeg> <./gammaZ-kZ.jpeg> <./gammaZ-nS.jpeg
 >]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 99.
  [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 306.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (./writtenJ.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `writtenJ.out' has not changed.
-(rerunfilecheck)             Checksum: C12C2FF05598E551D335E8297CD8AD45;675.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+(rerunfilecheck)             Checksum: B567DD532E4E2733D50FDEDEB17FDFBA;528.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 23269 strings out of 493304
- 420664 string characters out of 6139871
- 507489 words of memory out of 5000000
- 26242 multiletter control sequences out of 15000+600000
+ 23283 strings out of 494966
+ 420753 string characters out of 6179559
+ 502408 words of memory out of 5000000
+ 26011 multiletter control sequences out of 15000+600000
  14332 words of font info for 53 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
+ 40 hyphenation exceptions out of 8191
  63i,29n,76p,10350b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
@@ -1769,10 +1744,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on writtenJ.pdf (13 pages, 453239 bytes).
+Output written on writtenJ.pdf (13 pages, 454399 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

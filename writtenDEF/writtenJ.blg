@@ -3,46 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: writtenJ.aux
 The style file: plain.bst
 Database file #1: written.bib.bib
+I was expecting a `,' or a `}'---line 190 of file written.bib.bib
+ :     
+ :     pages   = "8401--8413"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 200 of file written.bib.bib
+ :     
+ :     pages   = "17445--17454"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in chemwiki1
-You've used 13 entries,
+You've used 20 entries,
             2118 wiz_defined-function locations,
-            579 strings with 6815 characters,
-and the built_in function-call counts, 4644 in all, are:
-= -- 455
-> -- 250
+            624 strings with 8361 characters,
+and the built_in function-call counts, 7367 in all, are:
+= -- 710
+> -- 436
 < -- 0
-+ -- 102
-- -- 86
-* -- 370
-:= -- 788
-add.period$ -- 39
-call.type$ -- 13
-change.case$ -- 82
++ -- 176
+- -- 152
+* -- 611
+:= -- 1266
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 136
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 141
-empty$ -- 339
-format.name$ -- 86
-if$ -- 929
+cite$ -- 21
+duplicate$ -- 216
+empty$ -- 508
+format.name$ -- 152
+if$ -- 1458
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 14
-newline$ -- 68
-num.names$ -- 24
-pop$ -- 75
+int.to.str$ -- 20
+missing$ -- 21
+newline$ -- 103
+num.names$ -- 38
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 116
 quote$ -- 0
-skip$ -- 92
+skip$ -- 144
 stack$ -- 0
-substring$ -- 330
-swap$ -- 13
+substring$ -- 481
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 76
 warning$ -- 1
-while$ -- 44
-width$ -- 15
-write$ -- 143
-(There was 1 warning)
+while$ -- 67
+width$ -- 22
+write$ -- 220
+(There were 2 error messages)
