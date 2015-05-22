@@ -1,0 +1,19 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\'on}{2}{section.1}
+\contentsline {section}{\numberline {2}Modelo}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Dise\~no}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Ecuaciones de Hill}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Reacciones enzim\'aticas}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Par\'ametros}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Modelos determinista y estoc\'astico}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}An\'alisis de sensibilidad}{9}{subsection.2.6}
+\contentsline {section}{\numberline {3}M\'etodos Experimentales}{10}{section.3}
+\contentsline {section}{\numberline {4}Consideraciones \'Eticas}{11}{section.4}
+\contentsline {section}{\numberline {A}Ap\'endice: Partes}{12}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Promotor}{12}{subsection.Alph1.1}
+\contentsline {subsection}{\numberline {A.2}LacI}{12}{subsection.Alph1.2}
+\contentsline {subsection}{\numberline {A.3}pAC-Mev}{12}{subsection.Alph1.3}
+\contentsline {subsection}{\numberline {A.4}Bergamoteno sintasa}{13}{subsection.Alph1.4}
+\contentsline {subsection}{\numberline {A.5}RBS}{13}{subsection.Alph1.5}
+\contentsline {subsection}{\numberline {A.6}BergF}{13}{subsection.Alph1.6}
+\contentsline {subsection}{\numberline {A.7}BerR}{13}{subsection.Alph1.7}

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: writtenJ.aux
+The style file: plain.bst
+Database file #1: written.bib.bib
+Warning--to sort, need author or key in chemwiki1
+Warning--to sort, need author or key in igem
+Warning--to sort, need author or key in igemP
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            631 strings with 8504 characters,
+and the built_in function-call counts, 8080 in all, are:
+= -- 785
+> -- 454
+< -- 0
++ -- 183
+- -- 158
+* -- 668
+:= -- 1352
+add.period$ -- 66
+call.type$ -- 22
+change.case$ -- 145
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 232
+empty$ -- 585
+format.name$ -- 158
+if$ -- 1620
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 113
+num.names$ -- 38
+pop$ -- 138
+preamble$ -- 1
+purify$ -- 123
+quote$ -- 0
+skip$ -- 153
+stack$ -- 0
+substring$ -- 576
+swap$ -- 22
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 3
+while$ -- 71
+width$ -- 24
+write$ -- 238
+(There were 3 warnings)
